@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: cyan;
+            display: flex;
+            align-content:center;
+            font-family:fantasy;
+        }
+        
+        .navbar{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding:20px;
+            filter:brightness(red);
+            outline-style: dotted greenyellow;
+            outline-width: thick;
+            background: crimson;
+        }       
+
+        nav{
+            flex:2;
+            text-align: right;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        } 
+        a{
+            text-decoration: darkorange;
+            color: yellow;
+            text-align: right;
+            font-size: 24px;
+            font-weight:bold;
+            outline-style: dotted crimson;
+            outline-width: thick;
+            filter:drop-shadow(yellow);
+        }
+        a:hover{
+            background: hotpink;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        a:active{
+            background: crimson;
+            font-size-adjust: inherit;
+        }
+        p{
+            color:black;
+        }
+
+        .container{
+            max-width: 1250px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .btn{
+            display: inline-block;
+            background: greenyellow;
+            color: crimson;
+            padding: 8px 30px;
+            margin: 30px 0;
+            outline-style: dotted hotpink;
+            border-radius: 2px dotted hotpink;
+            transition:  background 0.4s;
+        }
+
+
+        .btn:hover{
+            background: hotpink;
+            transform: rotate3d(90deg);
+        }
+
+        .header{
+            background: radial-gradient(darkorange,greenyellow);
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+
+
+        .col-1{
+            flex-basis: 50%;
+            min-width: 300px;
+            margin: auto;
+            padding: auto;
+        }
+
+        .col-1 img{
+            max-width:100%;
+            padding: 50px 0;
+        }
+        .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+            transition: 4s linear;
+            transition-duration: 3s;
+        
+        }
+
+        .col-2:hover{
+            transform: rotate3d(180deg);
+        }
+
+        .col-2 img{
+            max-width: 100%;
+            padding: 50px 0;
+
+        }
+           .logo{
+               position:relative;
+               height: 40px;
+               outline:yellow;
+               outline-style: dotted;
+               text-shadow: none;
+               animation: animate .9s linear infinite;
+               
+           }
+
+           .logo:hover{
+               color: greenyellow;
+
+           }
+           @keyframes animate
+           {
+               0%,100%
+               {
+                   size: 22px;
+                   filter:hue-rotate(90deg);
+               }
+               0%,85%
+               {
+                   size: 12px;
+                   filter:hue-rotate(180deg);
+               }
+           }
+
+        .col-2 h1{
+            font-size: 45px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+
+        .header .row{
+            margin-top: 70px;
+        }
+    
+    
+        .col-3{
+               flex-basis: 30%;
+               min-width: 250px;
+               margin-bottom: 30px;
+        }
+        .col-3:hover{
+            transform: rotate(180deg);
+        }
+
+        .col-3 img{
+            width: 100%;
+            border-width: thick;
+            border-style:dotted crimson;
+        }
+        
+        
+
+        .small-container{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .button{
+            outline-style: dotted crimson;
+            background: greenyellow;
+            position:absolute;
+            size: 30px;
+            font-weight: bold;
+            color:black;
+        }
+
+        .button:hover{
+            transform: rotate3d(360deg);
+            color:brown;
+        }
+        .col-4{
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        
+        .col-4:hover{
+            transform: rotate(90deg);
+            
+        }
+
+        .col-4 img{
+            width: 100%;
+        }
+        .title{
+            text-align:center;
+            margin: 0 auto 70px;
+            position:relative;
+            line-height: 60px;
+            color: darkred;
+        }
+
+        .title::after{
+             content:"";
+             background:deeppink;
+             width: 80px;
+             height: 5px;
+             border-radius: 5px solid black;
+             position: absolute;
+             bottom: 0;
+             left: 50%;
+             transform: translateX(-50%);
+        }
+            h4{
+                color:gold;
+                font-weight:bold;
+            }
+
+            .col-4 p{
+                font-size: 14px;
+            }
+
+            .offer{
+                margin-top: 80px;
+                padding: 30px 0;
+            }
+
+            .col-2.offer-img{
+                padding: 50px;
+            }
+            small{
+                color:hotpink;
+                font-size: 20px;
+            }
+            /*--------brands------------------*/
+         .brands{
+             margin: 100px auto;
+         }
+         .col-5{
+             width:160px;
+             transition: transform 0.4s;
+         }
+
+         .col-5:hover{
+             transform:rotate3d(180deg);
+         }
+         .col-5 img{
+             width: 100%;
+             cursor:pointer;
+             outline: dotted crimson;
+             outline-width: thick;
+         }
+
+         .col-5 img:hover{
+             background: red;
+             box-shadow:inset;
+         }
+
+         .footer{
+             width: 100%;
+             background: crimson;
+
+         }
+         
+    </style>
+</head>
+<body> 
+
+
+    </div>
+     <div class="conatainer">
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/addidas.png" width="125px">
+            <a href="" class="button">ADDIDAS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#>">SERVICES</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">PRICE</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="col-1">
+            <h1>A BRAND WHICH WON MILLIONS OF HEARTS</h1>
+            <h2> BE UNIQUE BE SPECIAL!</h2>
+         <strong><p>Adidas is not just a brand it is a propserous jewel among itself. It;s products are so amazing,lip-smacking and soo eye-catching which is worth buying</p>
+            <p>Its quality of accesorries are sky-scarping and stupendous</p>
+            <p>But when it is so eminent,and liked by millions the price will automatically shoot up high.Its average price is around 1500-1800 and the highest has gone uoto 20000</p>
+            <p>ADDIDAS makes a lot of accesorries like shirts,t shirts,bands,shoes,caps,jackets, sweaters and it makes mammooth 400+ crores in a year which is huge!!</p>
+            <p>ADDIDAS is not just a barnd it is a propserpous jewel and gem which is founded by one of the brightest minfs of the world. His creativity,imagination and has long slog and grind has become fruitful now
+             <h1> TYPES OF PRODUCTS</h1>
+             <p>Addidas makes myraid of products like lavishing shoes,lucrative and beautiful jackets ,tshirts whcih are amzaing and worth buying</p>
+             <p>ADDIDAS makes a hefty and fat money in whle year it earns around 400 crores which is humongous and huge</p>
+             <p> The quality of the products is cotton and silk which is purely soft and silky without any errors, and so obviouly it is a big company product so yiu can;t take risk</p>
+
+             <h2>REVENUE AND GROWTH OF THE COMPANY</h2>
+             <p> This gigantic company was founed and given birth by Adolf Dasssler in 18 august 1949 in germnay</p>
+             <p>Adolf is living its lavish life in its humongous mansion in germany after creating a history in world of founders</p>
+
+             <h2></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1><p style="color:yellow"></p> ADDIDAS</h1> 
+            <h2><p style="color:yellowgreen"></p>GIVE YOUR LIFE A VARIETY OF TASTE</h2>
+          <strong><p>Success isn't always about greatness. Its not only about you have to achieve great things, its about variety of things achivement can be never be measured it can be small or large</p>   
+            <p>Raddidas is a very famous and lucrative brand which is emient all over the world</p> </strong></strong>>   
+            <a href="" class="btn">EXPLORE NOW</a>
+    </div>
+    <div class="col-2">
+        <img src="assets/adidas logo.jpg" width="400" height="300">
+        <p></p>
+
+
+
+
+        <!-------------featured categories----------------------->
+        <div class="categories">
+            <div class="row">
+                <div class="col-3">
+                    <img src="./assets/blue shoes.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="./assets/black and white shoes.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="assets/white shoes.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!------------------featured products----------------------->
+        <div class="small-container">
+            <h2 class="title"></h2>FEATURED PRODUCTS</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/grey shirt.jpg">
+                    <p>$50.00</p>
+                    </div>
+                    <h4>ADDIDAS SHIRTS</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="./assets/adidas shirts.jpg">
+                        <p>$60.00</p>
+                        </div>
+                        <h4>ADDIDAS SHIRTS</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/black shirts.jpg">
+                            <p>$80.00</p>
+                            </div>
+                            <h4>ADDIDAS SHIRTS</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="title">LATEST PRODUCTS</h2>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/adidas jackets.jpg">
+                                    <p>$75.00</p>
+                                    </div>
+                                    <h4>ADDIDAS SHIRTS</h4>
+                                    <div class="rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="assets/red jackets.jpg">
+                                        <p>$90.00</p>
+                                        </div>
+                                        <h4>ADDIDAS SHIRTS</h4>
+                                        <div class="rating">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="assets/blue jackets.jpg">
+                                            <p>$87.00</p>
+                                            </div>
+                                            <h4>ADDIDAS SHIRTS</h4>
+                                            <div class="rating">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </div>
+
+                                            <!-----------offer------------>
+                                            <div class="offer">
+                                                <div class="small-conatainer">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <img src="assets/fitbit.jpg">
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <p>Exculisively Available on RedStore</p>
+                                                            <h1>SMART BAND 5</h1>
+                                                            <small>The Mi Smart Band 5 features a 39.9% larger than Mi Band 3 Amoled color and full-waqtch display with adjustable brightness,so everything is clear as acan be</small>
+                                                            <a href="" class="btn">BUY NOW</a>
+
+                                                            <!-------------brands---------->
+                                                            <div class="brands">
+                                                                <div cla="small-conatainer">
+                                                                    <div class="row">
+                                                                        <div class="col-5">
+                                                                            <img src="assets/godrej.png">
+                                                                            <div clas="col-5">
+                                                                                <img src="assets/oppo.png">
+                                                                                <div class="col-5">
+                                                                                    <img src="assets/phillips.png">
+                                                                             
+                                                                                                         </ul>
+                                                                                                     </div>
+                                                                                                 </div>
+                                                                                             </div>
+                                                                                         </div>
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </divclass>
+                                            </divss>
+
+            </div>
+        </div>
+
+
+    
+</body>
+</html>

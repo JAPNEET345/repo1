@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MARIO RUN RUN</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+
+        body {
+            background-image: url("assets/mario\ background.png");
+            font-size: 12px;
+            font-style: italic;
+            border-width: thick;
+            border-style: dotted;
+        }
+        .mainMarioBg{
+             width: 100%;
+             height: 100%;
+            background-size: 100% 100%;
+            position: relative;
+    
+        }
+        .mario img{
+            position: sticky;
+            bottom: 55px;
+            animation-name: mariorun;
+            animation-duration: 4s;
+            animation-iteration-count: 7;
+            animation-timing-function: linear;
+            animation-play-state: running;
+
+        }
+        @keyframes mariorun{
+            0%{Left: 0%;}
+            100%{Left: 88%;}
+        }
+        h2{
+            color:hotpink;
+            font-family: fantasy;
+            text-transform: uppercase;
+            font-size:unset;
+            position: absolute;
+            animation-duration: 7s;
+            animation-delay: inherit;
+            letter-spacing: 2px;
+            animation-fill-mode: forwards;
+            animation-name: initial;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-iteration-count: 9;
+            left: 50%;
+            top: 20%;
+            right: 30%;
+        }
+        @keyframes mariotext{
+            0%{font-size: 2em;}
+            100%{font-size:4em; left: 40%;}
+
+        }
+        </style>
+
+    <div class="container">
+        <div class="mario">
+            <h1><p style="color: yellow "width="400" height="200">MARIO RUN RUN</p></h1>
+            <img src="assets/marios.jpg" width="200" height="250">
+            <h2><p style="color:chartreuse" width="200" height="400">A BEAUTIFUL OLD GAME</p></h2>
+        </div>
+
+    
+</body>
+</html>
