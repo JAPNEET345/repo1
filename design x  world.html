@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+   <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin:0; 
+            padding:0;
+            font-family: fantasy;
+            list-style:none;
+        }
+
+        .banner{
+            width:100%;
+            height: 700vh;
+            background: chartreuse;
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            width:100%;
+            background: saddlebrown;
+            margin:auto;
+            padding:25px 0;
+            display:flex;
+            outline-style: groove yellow;
+            outline-width: thin;
+            align-items: center;
+            justify-content: space-between;
+            animation: animate .3s linear infinite;
+        }
+.navbar:hover{
+    background: lightsalmon;
+}
+       label.logo a{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            padding:0 100px;
+            
+        }
+
+        .logo{
+    position: relative;
+    color: yellow;
+    font-size: 20px;
+    text-shadow: white;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate
+    {
+         0%, 100%
+         {
+             color: hotpink;
+             filter: brightness(red);
+         }
+         
+             0%,85%
+             {
+                 color: yellow;
+                 filter: brightness(violet);
+             }
+         }
+
+        label.logo a:hover{
+            background: yellow;
+        }
+        @keyframes animate
+        {
+            0%,100%
+            {
+                color: yellow;
+                filter:brightness(brown);
+                
+            }
+            0%,85%
+            {
+                color: whitesmoke;
+                filter: brightness(green);
+                
+            }
+        }
+               .navbar ul{
+                   float: right;
+                   margin-right: 20px;
+               }
+        .navbar ul li{
+            list-style:none;
+            display:inline-block;
+            margin: 0 20px;
+        }
+        .navbar ul li a{
+                      text-decoration:none;
+                      color: yellow;
+                      text-transform: uppercase;
+                      padding: 7px 13px;
+                      border-radius: 3px;
+        }
+
+        a:active,a:hover{
+            background: black;
+            transition: 0.2s;
+        }
+
+        
+        button{
+            width: 200px;
+            padding: 20px 0;
+            text-align: center;
+            display: inline-block;
+            border-radius: 10px solid black;
+            font-weight: bold;
+            cursor:pointer;
+            background: darkblue;
+            color: white;
+            margin: 20px 10px;
+            position:relative;
+            transition: background 0.2s;
+        }
+
+        button:hover{
+            background: hotpink;
+
+        }
+        h1{
+            color: black;
+            font-weight: 400;
+            
+        }
+        h1:hover{
+            background: lightcoral;
+
+        }
+        h2{
+            color: brown;
+            font-weight: bold;
+            outline-width: thin blue;
+
+        }
+             h2:hover{
+                 font-weight: 500;
+                 outline-width: thick;
+             }
+        .container img{
+            border-width: thick black;
+            border-style: dotted;
+            transition: transform .3s linear;
+        }
+
+        .content img{
+            border-width: thick black;
+            border-style:groove;
+            filter:contrast(brown);
+            transition: transform .4s linear;
+        }
+
+        .content img:hover{
+            transform: scaleX(180deg);
+        }
+           .btn{
+               background: hotpink;
+               outline-style: dotted yellow;
+               outline-width: thick;
+               color: white;
+               transition: background .3s linear;
+           }
+
+           .btn:hover{
+               background: cyan;
+
+           }
+          .dining  img{
+              outline-style:groove;
+              border-style:groove black;
+              border-width: thick;
+              animation: animate .3s linear infinite;
+          }
+
+          @keyframes animate 
+          {
+              0%,100%
+              {
+                  outline-width: thick;
+                  outline-color:black;
+                  animation-direction: reverse;
+              }
+              
+                  0%,85%
+                  {
+                     outline-width: thick;
+                     outline-color:hotpink;
+                     animation-direction: alternate-reverse;
+                  }
+              }
+
+              
+          
+        .container img:hover{
+            transform: rotate(360deg);
+        }
+        .navbar img{
+            outline-style: dotted yellow;
+            outline-width: thick;
+            transition:  transform .2s linear;
+        }
+
+        .navbar img:hover{
+        transform:rotate(180deg);
+        filter:brightness(red);
+        }
+             .footer{
+                 background: black;
+                 color: hotpink;
+                 font-size: 20px;
+             }  
+                 .side-bar{
+            width: 50px;
+            height: 100vh;
+            background: linear-gradient(blue,yellow);
+            position: absolute;
+            right: 0;
+            top:0;
+        }
+
+        .social-links img{
+            width:25px;
+            margin: 5px auto;
+            cursor:pointer;
+            
+        }
+        .social-links {
+            width: 50px;
+            text-align:center;
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h2:hover{
+            background: cyan;
+        }
+        h3:hover{
+            background: cyan;
+        }
+    </style>
+</head>
+<body> 
+    <nav>
+        <div class="side-bar">
+            <img src="assets/bars.png" width="20" height="20" class="menu">
+    
+            <div class="social-links">
+                <img src="assets/instagram logo.jpg">
+                <br>
+                <img src="assets/facebook.png">
+                <br>
+                <img src="assets/twitter.png">
+                <br>
+                <img src="assets/linkdin.png">
+                </div>
+    </nav>
+    <div class="banner">
+        <div class="navbar">
+        <img src="assets/design.jpg" width="125px"  class="logo">
+       <a><p style="color:yellow" width="20" height="30">DESIGN X WORLD</p>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BEDROOM</a></li>
+            <li><a href="#">KITCHEN</a></li>
+            <li><a href="#">DINING</a></li>
+            <li><a href="#">BACKYARD</a></li>
+        </ul>
+        </div>
+
+
+        <div class="container">
+          <strong><h1><p style="color:black">WELCOME TO DESIGNX WORLD</p></h1></strong>
+          <br>
+          <img src="assets/bedroom.jpg" width="300" height="200">
+          <br>
+          <button type="button">DESIGN X WORLD</button>
+          <br>
+          <p>DESIGN X WORLD is a newly born fresh and flourish startup which is encumbered in Delhi.This startup was founded by Mr.Japneet Singh Nayyar who is software engineer,enterpreneur who hails from Delhi only</p>
+          <p>It has lucrative and lavishing furnitures such as tables, designng and craving chairs which are very eye-catching and alluring and this it attarcts the people pockets</p>
+          <p>Also apart from the stupendous and magnificient  home decor and accesories and imprressive decors it also attarctive paints which which are very attractive,crispy and made with utmost hardwork and dediction of the workers which slog and grind day by day to make </p>
+          <p>This startup has gained many spotlight and he is growing its roots day by day and is now moving into more lime-light. Design X startup has total of 23-30 employees workin on the interior and graphic designng,pubilcity ,promotions, marketing ,finance  of the startup to emerge and glow more into the corporate light</p>
+          <p>It also has an office in Bandra and two shops in delhi itself which are earning a hefty and fat amount of money</p>
+          </div>
+          <button type="button">EXPLORE MORE ABOUT THE STARTUP</button>
+             <br>
+             <div class="content">
+                 <ol>
+     <li><strong><h2><p style="color: brown">ABOUT  INTERIOR DESIGN </p></h2></strong></li>
+       <br>
+                </ol>
+                
+        <ul>
+            <br>
+       <li><img src="assets/luxury.jpg" width="300" height="200"></li>
+       <p> The designs are awesome and very eye-catching and alluring. DESIGN X WORLD forces you to broaden yor mind into hits world of marvellouss designs,accesories,decors,interior designsand much more</p>
+       <p>Interior design is the art and science of enhacing the interior of a buliding through various rows ad coloumns of attractive and fascinating designs</p>
+       <p>There are many interior design styles like transitional,traditional and modern, Eclectic and contemporary and minimalist also which also nadds to the shinand beauty of interior design and give a new crispy and flavour</p>
+       <p>Interior design cannot be done everyone your mind should be creative,innovative with fresh-fill ideas.You should have the ablity throw your innovative thoughts,you should think out of the box</p>
+       <p>Inerior designing can give you handsome pay salary so you can live a lavish and a happy life</p>
+         <br>
+         </ul>
+         </div>
+         <div class="design">
+       <h2><p style="color: darkgreen">KITCHENS</p></h2>
+       <br>
+       <button type="btn">MODULAR KITCHENS</button>
+       <ul>
+           <br>
+      <li><img src="assets/kitchen.jpg"></li>
+      <p>DESIGN X WORLD contains amazing and glorious designs , layouts which can make your house not less than a 5 star hotel</p>
+      <p>These kitchens are also called as modular kitchens which are  very eminent. The dark moody tile walls,shining and glistening floors almirahs are lip-smacking and pulse-pounding whiuch melts anyone's heart and the floors and tiles are so shining thatbthey immediately strike your eyes and engulf it with lights,also the stainless steel applications,utensils competely fit with it the picture and add a new level of style and innovation design</p>
+      <p>Also the crispy and edegy mirrored surfaces take the metallic look to new high level of schnillating veauty and awesome design</p>
+      <p>There is no ending of design in DESIGN X WORLD you can immerse and swim in the water and waves of glorious designs which can left you in spilts and you can become transfixed with amazement when you open the door of beauty and design of DESIGN X WORLD</p>
+      <p>See kitchen is the only place where we can see everyone, it is the epitome of place if anyone comes in your home the he will glance at your cooking center where our mothers work hard work their fingers to the bone</p>
+      <p>So if you are in a dilemma how to make a beautiful kitchen then DESIGN X can be a perfevt destination and landing for you and it would be great match </p>
+      <br>
+           <div class="dining">
+      <h2><p style="color: darkmagenta">DINING</p></h2>
+      <ul>
+          <br>
+      <li><img src="assets/dining.jpg" width="300" height="200"></li>
+      <br>
+      <p>Now comes the most attractive ,eye-catching center of your small palace which is the dining table. DESIGN X WORLD has myraid kind of designs, layouts ,uncountable things which can surely be jaw-dropping for you</p>
+      <p>DINING TABLE has another aura it is the place where we exachange words,talk about our daily routine,next day plams,sort issues it looks very cool  when all family members sit together their addition gives a flawless and undeliable touch on the design and yes t make the scene more alluring DESIGN XWORLD  will always be there for you</p>
+      <p>The materilas which has lot of shining black wooden chairs with fascinating table covers which increase the liquidity and transparency of the design. Also it has glistening and gleaming steel metal tables with curvy with edges and designable wooden sticks with holds the whole weight of table thus proliferaes the  viweeing of eyes of people and people can't resist themselve glancing at it</p>
+      <p>It also has chairs , the chairs can be wooden,cusion chairs with soft and fluffy pillows ,it can be plastic wrapped chairs or it can be simple one</p>
+      <p></p>
+         <br>
+      <h3><p style="color: darkred">DRAWING ROOM</p></h3>
+      <ul>
+          <br>
+          <li><img src="assets/drawing.jpg" width="300" height="200"></li>
+          <br>
+          <p>Drawing room is the only place in your house which you will see dirty , you will want your drwaing room your main and first center of attraction looks stupendous and offbeaten</p>
+         <p> Drawing rooms are spaces that are stepped into first when people visit a home. They define the character of the space and their design defines the feel and ambience. It is te place which adds a new taste and flavour to the transparecny and contast of the house</p>
+         <p>The cushion covers ,the small soft and fluffy pillows which are very heart-melting and so eye-catching it can't be expresed in words</p>
+         <p>Also the fascinating flowers in the fllowers vase adds more ice to the cake and adds new feather to his illustrious cap and beauty</p>
+         <p>DESIGN X has every equipment ,every thing,accesories which are needy for a person.The comoany is working its fingers to the bone ,they are grinding their ass out to make sure that the customer is happy and satified, thus  by this DESIGN X WORLD earns hefty,bulk and fat money ,its cash-inflow sprints in godspeed</p>
+        
+      </ul>
+       <h3><p style="color:darkblue">BALCONY AND BACKYARD</p></h3>
+       <button type="button"> EYE-CATCHING BALCONIES</button>
+       <ul>
+           <br>
+           <li><img src="assets/balcony.jpg" width="300" height="200">
+            <br>
+            <br>
+            <p>Last but not the least come balcony it is the most,loved cornr of your entire decor of house, most calm ,peace positive vibes can be experienced in this place</p>
+            <p>This is thebonly place which can be designed,extended to any unbounded limits and according to people desires and choices</p>
+            <p>Also if you ahve  a lavish samll garden with a swing that is like a opening a door to heaven</p>
+            <p>Balcony is the only place where you finallly can feel the fresh air which can sway away your heart,the chirping sound of the words are so sweet and melidous it can't be expressed in words</p>
+            <p> It is also the placw where you can finally strech out your legs and take abreak from your monotous and hectic life</p>
+       </ul>
+       <br>
+            <h2><p  style="color:brown">IF SOMEBODY IS INTERSTED IN THSESE DECORS CAN FILL THE FORM</p></h2>
+            <br>
+            
+      <p> NAME
+           <input type="name">
+       </p>
+       <p> ADDRESS
+           <input type="address">
+       </p>
+    <p> PHONE NUMBER
+        <input type="phone number">
+    </p>
+    <p> EMAIL
+        <input type="email">
+    </p>
+    <p> BUDGET
+        <input type="budget">
+    </p>
+    <br>
+       <table width="1000" height="60" border="0" cellspacing="5"  cellpadding="5" bgcolor="black">
+           <tr>
+               <td align="center">
+                   <font face="Vedana, Geneva,sans-sarif" color="yellow">HOME CONTACTS SERVICES MANAGEMENT</br>
+                   @Copy Right 2020- Dveloped by Mr.JAPNEET SINGH NAYYAR<h2><p style="color:hotpink">@design x world</p></h2>
+                   <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                   <div>
+
+                   </div>
+               </td>
+           </tr>
+
+
+
+              </div>
+          </div>
+    
+</body>
+</html>
